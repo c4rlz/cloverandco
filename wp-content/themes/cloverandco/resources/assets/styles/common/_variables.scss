@@ -1,0 +1,28 @@
+/** Colors */
+$fuschia: #9e2b83;
+$pastel-pink: #dd9cce;
+$pastel-blue: #8aaecf;
+$pastel-green: #87c3c1;
+$pastel-purple: #ccbbe4;
+$grey: #646d71;
+
+$primary: $pastel-pink;
+$accent: $pastel-green;
+
+/** Box Model  */
+$spacer: 2rem;
+$control-radius: 0;
+
+/* Fonts */
+$playfairDisplay: 'Playfair Display', serif;
+$rokkitt: 'Rokkitt', serif;
+$charter: 'Charter', serif;
+
+$heading: $playfairDisplay;
+$subheading: $rokkitt;
+$body: $charter;
+
+/* Sizes */
+$size-1: 5rem;
+$size-2: 3rem;
+$size-3: 1.8rem;
