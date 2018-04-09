@@ -1,4 +1,4 @@
-<section class='hero is-fullheight'> 
+<section class='hero'> 
   <div class='hero-body'>
     <div class='container is-full'>
       <div class='content'>
