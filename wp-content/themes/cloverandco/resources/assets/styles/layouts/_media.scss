@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+  .page-landing-data {
+    // .content {
+    //   margin-top: 17rem;
+    // }
+
+    .custom-logo-link {
+      left: 35%;
+      top: 10px;
+
+      img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .hero-body {
+    transform: translateY(-69px);
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 100vw;
+    width: 100%;
+  }
+}
