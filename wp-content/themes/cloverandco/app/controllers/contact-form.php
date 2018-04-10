@@ -12,7 +12,7 @@ class ContactForm extends Controller
 
   }
   public function prepare_email($contact) {
-    $to = $contact->name;
+    $to = $contact->email;
     $subject = "Thanks for your interest in Clover&Co Candy Catering! ";
     $message = "Hello" . $contact->name . ", your inquiry was received. We will be in touch!";
     $message .= "We received the following details related to your event of interest: ";
@@ -20,7 +20,7 @@ class ContactForm extends Controller
     $message .= "Event Date: ".  $contact->eventDate;
     $message .= "Service of Interest: " . $contact->service;
     $header = "From:clovercandycatering@gmail.com \r\n";
-    $header .= "Cc:ashleyodonnel@live.com \r\n";
+    $header .= "Cc:carly.ewasiuk94@gmail.com \r\n";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-Type: text/html\r\n";
 

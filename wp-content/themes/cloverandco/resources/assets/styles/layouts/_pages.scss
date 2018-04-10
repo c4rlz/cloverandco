@@ -2,9 +2,17 @@
 
 /* LANDING PAGE */
 
-.page-landing-data.custom-background {
-  background-repeat: no-repeat;
-  background-size: cover;
+.page-landing-data {
+  // height: 100vh;
+  .page-container,
+  .banner {
+    background: rgba($overlay, 0.5);
+  }
+
+  &.custom-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero-head {
@@ -12,8 +20,6 @@
 }
 
 .hero-body {
-  background: rgba($fuschia, 0.5);
-
   h1,
   h4,
   p {
@@ -21,7 +27,7 @@
   }
 
   .content {
-    @extend .column, .is-8, .is-6-widescreen, .is-offset-4;
+    @extend .column, .is-7, .is-6-widescreen, .is-offset-5;
   }
 
   h1 {
@@ -33,19 +39,10 @@
   h4 {
     @extend .is-size-3, .is-size-4-mobile;
   }
-
-  @extend .is-overlay;
 }
 
 /* SERVICES PAGE */
 
-body.custom-background.page-services-data {
-  background-image: none !important;
-}
-
-@media screen and (min-width: 1216px) {
-  .container {
-    max-width: 100vw;
-    width: 100%;
-  }
-}
+// body.custom-background.page-services-data {
+//   background-image: none !important;
+// }
