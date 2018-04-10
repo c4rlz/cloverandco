@@ -1,5 +1,5 @@
 @php (ContactForm::validate_form()) 
-<form action=<?php the_permalink(); ?> method='POST'>
+<form class='inquiry-form' action=<?php the_permalink(); ?> method='POST'>
 <div class="control">
   <label class='form-label' for='contact-name'>Your Name</label>
   <input class="input" id='contact-name' type="text" name='contact-name' placeholder="Full Name" required autocomplete='name'>
@@ -48,7 +48,7 @@
 </div>
 
 <div class="control is-expanded">
-<label class='form-label' for='event-service'> Your Service </label>
+<label class='form-label' for='event-service'> Your Service of Interest </label>
   <div class="select is-fullwidth">
     <select name='service'>
       <option label=" "></option>

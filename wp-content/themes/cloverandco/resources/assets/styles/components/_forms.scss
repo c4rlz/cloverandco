@@ -24,7 +24,8 @@
 // }
 
 .input,
-.select select {
+.select select,
+.button {
   font-family: $subheading;
   background: transparent;
   border: 2px solid white;
@@ -75,4 +76,22 @@
 
 .form-input.filled {
   box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.select:not(.is-multiple)::after {
+  border: 2px solid #fff;
+  border-top: 0;
+  border-right: 0;
+}
+
+@keyframes autofill {
+  to {
+    color: #fff;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
 }

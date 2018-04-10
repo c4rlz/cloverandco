@@ -6,7 +6,7 @@
   // height: 100vh;
   .page-container,
   .banner {
-    background: rgba(158, 43, 131, 0.5);
+    background: rgba($overlay, 0.5);
   }
 
   &.custom-background {
@@ -27,7 +27,7 @@
   }
 
   .content {
-    @extend .column, .is-8, .is-6-widescreen, .is-offset-4;
+    @extend .column, .is-7, .is-6-widescreen, .is-offset-5;
   }
 
   h1 {
