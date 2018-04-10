@@ -14,7 +14,7 @@
 </div>
 <div class="control">
 <label class='form-label' for='guest-estimate'>Estimated Number of Guests</label>
-  <input class="input" type="number" id='guest-estimate' name='guest-estimate' placeholder="Estimated Number of Guests">
+  <input class="input" type="number" id='guest-estimate' name='guest-estimate' placeholder="Estimated Number of Guests" required>
 </div>
 <div class="control">
 <label class='form-label' for='event-date'>Your Event Date</label>
