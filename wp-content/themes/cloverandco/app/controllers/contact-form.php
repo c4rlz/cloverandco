@@ -17,19 +17,19 @@ class ContactForm extends Controller
     $to = $contact->email;
     $subject = "Thanks for your interest in Clover&Co Candy Catering! ";
     $message = "Hello " . $contact->name . ", your inquiry was received. We will be in touch!";
-    $message .= " We received the following details related to your event of interest: ";
-    $message .= " Event Type: " . $contact->eventType ."\r\n";
-    $message .= " Event Date: ".  $contact->eventDate ."\r\n";
-    $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n";
-    $message .= "Service of Interest: " . $contact->service ."\r\n";
+    // $message .= " We received the following details related to your event of interest: ";
+    // // $message .= " Event Type: " . $contact->eventType ."\r\n";
+    // // $message .= " Event Date: ".  $contact->eventDate ."\r\n";
+    // // $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n";
+    // // $message .= "Service of Interest: " . $contact->service ."\r\n";
     $headers = "From: info@cloverscandycatering.com" . "\r\n";
-    $headers .= "Cc: carly.ewasiuk94@gmail.com" . "\r\n";
+    // $headers .= "Cc: carly.ewasiuk94@gmail.com" . "\r\n";
     // $headers .= "MIME-Version: 1.0\r\n";
     // $headers .= "Content-Type: text/html\r\n";
 
-    var_dump($to, $subject, $message, $header);
+    var_dump($to, $subject, $message, $headers);
     $confirmation = wp_mail($to, $subject, $message, $headers);
-    var_dump($confirmation);
+    var_dump('confirmation', $confirmation);
     
 
     $confirmation ? self::mail_success(true) : self::mail_success(false);
