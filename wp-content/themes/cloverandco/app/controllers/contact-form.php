@@ -16,19 +16,19 @@ class ContactForm extends Controller
 
     $to = $contact->email;
     $subject = "Thanks for your interest in Clover&Co Candy Catering! ";
-    $message = "Hello" . $contact->name . ", your inquiry was received. We will be in touch!";
-    $message .= "We received the following details related to your event of interest: ";
-    $message .= "Event Type: " . $contact->eventType;
-    $message .= "Event Date: ".  $contact->eventDate;
-    $message .= "Number of Guests" . $contact->guestEstimate;
-    $message .= "Service of Interest: " . $contact->service;
-    $header = "From:clovercandycatering@gmail.com \r\n";
-    $header .= "Cc:carly.ewasiuk94@gmail.com \r\n";
-    $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-Type: text/html\r\n";
+    $message = "Hello " . $contact->name . ", your inquiry was received. We will be in touch!";
+    $message .= " We received the following details related to your event of interest: ";
+    $message .= " Event Type: " . $contact->eventType ."\r\n";
+    $message .= " Event Date: ".  $contact->eventDate ."\r\n";
+    $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n";
+    $message .= "Service of Interest: " . $contact->service ."\r\n";
+    $headers = "From: info@cloverscandycatering.com" . "\r\n";
+    $headers .= "Cc: carly.ewasiuk94@gmail.com" . "\r\n";
+    // $headers .= "MIME-Version: 1.0\r\n";
+    // $headers .= "Content-Type: text/html\r\n";
 
     var_dump($to, $subject, $message, $header);
-    $confirmation = mail($to, $subject, $message, $header);
+    $confirmation = mail($to, $subject, $message, $headers);
     var_dump($confirmation);
     
 
