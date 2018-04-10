@@ -29,7 +29,7 @@ class ContactForm extends Controller
 
     var_dump($to, $subject, $message, $headers);
     // $confirmation = wp_mail($to, $subject, $message, $headers);
-    $confirmation = wp_mail('carly.ewasiuk94@gmail.com', 'hi', 'hi', 'From: carly.ewasiuk94@gmail.com');
+    $confirmation = mail('carly.ewasiuk94@gmail.com', 'hi', 'hi', 'From: carly.ewasiuk94@gmail.com');
     var_dump('confirmation', $confirmation);
     
 
