@@ -28,7 +28,7 @@ class ContactForm extends Controller
     // $headers .= "Content-Type: text/html\r\n";
 
     var_dump($to, $subject, $message, $header);
-    $confirmation = mail($to, $subject, $message, $headers);
+    $confirmation = wp_mail($to, $subject, $message, $headers);
     var_dump($confirmation);
     
 
