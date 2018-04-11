@@ -26,15 +26,11 @@ class ContactForm extends Controller
     $headers .= "Cc: carly.ewasiuk94@gmail.com" . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html\r\n";
-
-    var_dump($to, $subject, $message, $headers);
     $confirmation = wp_mail($to, $subject, $message, $headers);
-    // $confirmation = mail('carly.ewasiuk94@gmail.com', 'hi', 'hi', 'From: carly.ewasiuk94@gmail.com');
-    var_dump('confirmation', $confirmation);
     
 
     $confirmation ? self::mail_success(true) : self::mail_success(false);
-    // self::mail_success(false);
+
   }
   public function validate_form() {
     if(isset($_POST["contact-form"])) {
