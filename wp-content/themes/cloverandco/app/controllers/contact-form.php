@@ -23,7 +23,7 @@ class ContactForm extends Controller
     $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n";
     $message .= "Service of Interest: " . $contact->service ."\r\n";
     $headers = "From: info@cloverscandycatering.com" . "\r\n";
-    $headers .= "Cc: info@cloverscandycatering.com" . "\r\n";
+    $headers .= "Cc: info@cloverscandycatering.com, ashleyodonnell@live.ca" . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html\r\n";
     $confirmation = wp_mail($to, $subject, $message, $headers);
