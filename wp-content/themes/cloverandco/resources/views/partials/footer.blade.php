@@ -1,6 +1,6 @@
 <footer class="content-info">
   <div class="container">
-    <!-- @php(dynamic_sidebar('sidebar-footer')) -->
+    @php(dynamic_sidebar('sidebar-footer'))
     <span>© 2018 Clover & Co Candy Catering | Delta, B.C.
     </span>
     <section class='social-icons'>
