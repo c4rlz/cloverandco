@@ -1,0 +1,32 @@
+footer {
+  padding: 0 30px;
+  line-height: 70px;
+  color: $white;
+  background-color: rgba($overlay, 0.5);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column-reverse;
+  }
+
+  .social-icons {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+
+    a {
+      color: $green;
+    }
+
+    a:hover {
+      color: $orange;
+    }
+  }
+
+  span {
+    font-family: $subheading;
+    font-size: 0.9rem;
+  }
+}
