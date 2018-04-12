@@ -23,6 +23,12 @@
   .hero-body {
     transform: translateY(-69px);
   }
+
+  footer {
+    .container {
+      flex-flow: row;
+    }
+  }
 }
 
 @media screen and (min-width: 1216px) {
