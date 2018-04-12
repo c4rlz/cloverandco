@@ -1,7 +1,7 @@
 <footer class="content-info">
   <div class="container">
     <!-- @php(dynamic_sidebar('sidebar-footer')) -->
-    <span>© 2018 Clover & Co Candy Catering 
+    <span>© 2018 Clover & Co Candy Catering | Delta, B.C.
     </span>
     <section class='social-icons'>
       <a href='https://instagram.com/cloverscandycatering'><i class="fa fa-instagram" aria-hidden="true"></i></a>
