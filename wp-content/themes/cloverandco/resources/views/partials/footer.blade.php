@@ -6,7 +6,7 @@
     <section class='social-icons'>
       <a href='https://instagram.com/cloverscandycatering'><i class="fa fa-instagram" aria-hidden="true"></i></a>
       <a href='https://www.facebook.com/cloverscandycatering/'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href='https://twitter.com/cloverscandycatering'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href='https://twitter.com/cloverscandyco'><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </section>
   </div>
 </footer>
