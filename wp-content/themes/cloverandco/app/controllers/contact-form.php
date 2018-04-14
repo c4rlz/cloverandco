@@ -20,10 +20,10 @@ class ContactForm extends Controller
     $message .= " We received the following details related to your event of interest: ";
     $message .= " Event Type: " . $contact->eventType ."\r\n";
     $message .= " Event Date: ".  $contact->eventDate ."\r\n";
-    $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n";
+    $message .= " Number of Guests: " . $contact->estimate ."\r\n";
     $message .= "Service of Interest: " . $contact->service ."\r\n";
-    $headers = "From: info@cloverscandycatering.com" . "\r\n";
-    $headers .= "Cc: info@cloverscandycatering.com, ashleyodonnell@live.ca" . "\r\n";
+    $headers = "From: clovercocandycompany@gmail.com" . "\r\n";
+    $headers .= "Cc: clovercocandycompany@gmail.com, ashleyodonnell@live.ca" . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html\r\n";
     $confirmation = wp_mail($to, $subject, $message, $headers);
@@ -38,7 +38,7 @@ class ContactForm extends Controller
       $contact->name = isset($_POST["contact-name"]) ? $_POST["contact-name"] : "Interested party planner";
       $contact->email = isset($_POST["contact-email"]) ? $_POST["contact-email"] : "No email was entered";
       $contact->tel = isset($_POST["contact-tel"]) ? $_POST["contact-tel"] : "No phone number was entered";
-      $contact->guestEstimate = isset($_POST["guest-estimate"]) ? $_POST['guest-estimate]'] : "No guest estimate";
+      $contact->estimate = isset($_POST["guest-estimate"]) ? $_POST['guest-estimate]'] : "No guest estimate";
       $contact->eventDate = isset($_POST["event-date"]) ? $_POST["event-date"] : "Date of event is yet to be chosen" ;
       $contact->eventType = isset($_POST["event-type"]) && $_POST["event-type"] !== "Type Of Event" ? $_POST["event-type"] : "No event type selected" ;
       $contact->service = isset($_POST["service"]) && $_POST["service"] !== "Service Of Interest" ? $_POST["service"] : "No service selected";
