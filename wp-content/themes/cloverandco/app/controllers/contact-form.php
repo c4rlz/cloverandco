@@ -21,7 +21,7 @@ class ContactForm extends Controller
     $message .= " Event Type: " . $contact->eventType ."\r\n <br>";
     $message .= " Event Date: ".  $contact->eventDate ."\r\n <br>";
     $message .= " Event Location: " . $contact->eventLocation ."\r\n <br>";
-    $message .= " Number of Guests: " . $contact->estimate ."\r\n <br>";
+    $message .= " Number of Guests: " . $contact->guestEstimate ."\r\n <br>";
     $message .= "Service of Interest: " . $contact->service ."\r\n <br>";
     $headers = "From: clovercocandycompany@gmail.com" . "\r\n";
     $headers .= "Cc: clovercocandycompany@gmail.com, ashleyodonnell@live.ca" . "\r\n";
@@ -39,7 +39,7 @@ class ContactForm extends Controller
       $contact->name = isset($_POST["contact-name"]) ? $_POST["contact-name"] : "Interested party planner";
       $contact->email = isset($_POST["contact-email"]) ? $_POST["contact-email"] : "No email was entered";
       $contact->tel = isset($_POST["contact-tel"]) ? $_POST["contact-tel"] : "No phone number was entered";
-      $contact->estimate = isset($_POST["guest-estimate"]) ? $_POST['guest-estimate'] : "No guest estimate";
+      $contact->guestEstimate = isset($_POST["guest-estimate"]) ? $_POST['guest-estimate'] : "No guest estimate";
       $contact->eventLocation = isset($_POST["event-location"]) ? $_POST["event-location"] : "No event added";
       $contact->eventDate = isset($_POST["event-date"]) ? $_POST["event-date"] : "Date of event is yet to be chosen" ;
       $contact->eventType = isset($_POST["event-type"]) && $_POST["event-type"] !== "Type Of Event" ? $_POST["event-type"] : "No event type selected" ;
