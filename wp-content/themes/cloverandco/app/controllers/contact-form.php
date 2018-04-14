@@ -17,7 +17,7 @@ class ContactForm extends Controller
     $to = $contact->email;
     $subject = "Thanks for your interest in Clover&Co Candy Catering! ";
     $message = "Hello " . $contact->name . ", your inquiry was received. We will be in touch! <br> <br>";
-    $message .= " We received the following details related to your event of interest: <br> ";
+    $message .= " We received the following details related to your event of interest: <br><br> ";
     $message .= " Event Type: " . $contact->eventType ."\r\n <br>";
     $message .= " Event Date: ".  $contact->eventDate ."\r\n <br>";
     $message .= " Event Location: " . $contact->eventLocation ."\r\n <br>";
