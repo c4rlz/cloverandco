@@ -34,6 +34,7 @@ class ContactForm extends Controller
   }
   public function validate_form() {
     if(isset($_POST["contact-form"])) {
+      var_dump($_POST);
       $contact = new \stdClass();
       $contact->name = isset($_POST["contact-name"]) ? $_POST["contact-name"] : "Interested party planner";
       $contact->email = isset($_POST["contact-email"]) ? $_POST["contact-email"] : "No email was entered";
