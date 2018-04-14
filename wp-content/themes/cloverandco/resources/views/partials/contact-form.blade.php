@@ -13,9 +13,14 @@
   <input class="input" type="tel" id='contact-tel' name='contact-tel' required autocomplete='tel'>
 </div>
 <div class="control">
+<label class='form-label' for='event-location'>Event Location</label>
+  <input class="input" type="text" id='event-location' name='event-location' required>
+</div>
+<div class="control">
 <label class='form-label' for='guest-estimate'>Estimated Number of Guests</label>
   <input class="input" type="number" id='guest-estimate' name='guest-estimate' required>
 </div>
+
 <div class="control">
 <label class='form-label' for='event-date'>Your Event Date</label>
   <input class="input" type="text" id='event-date' name='event-date'>
