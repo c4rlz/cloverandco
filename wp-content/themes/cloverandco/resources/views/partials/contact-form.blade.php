@@ -2,23 +2,28 @@
 <form class='inquiry-form' action=<?php the_permalink(); ?> method='POST'>
 <div class="control">
   <label class='form-label' for='contact-name'>Your Name</label>
-  <input class="input" id='contact-name' type="text" name='contact-name' placeholder="Full Name" required autocomplete='name'>
+  <input class="input" id='contact-name' type="text" name='contact-name'  required autocomplete='name'>
 </div>
 <div class="control">
 <label class='form-label' for='contact-email'>Your Email</label>
-  <input class="input" id='contact-email' type="email" name='contact-email' placeholder="Email Address" required autocomplete='email'>
+  <input class="input" id='contact-email' type="email" name='contact-email' required autocomplete='email'>
 </div>
 <div class="control">
 <label class='form-label' for='contact-tel'>Your Phone Number</label>
-  <input class="input" type="tel" id='contact-tel' name='contact-tel' placeholder="Phone Number" required autocomplete='tel'>
+  <input class="input" type="tel" id='contact-tel' name='contact-tel' required autocomplete='tel'>
+</div>
+<div class="control">
+<label class='form-label' for='event-location'>Event Location</label>
+  <input class="input" type="text" id='event-location' name='event-location' required>
 </div>
 <div class="control">
 <label class='form-label' for='guest-estimate'>Estimated Number of Guests</label>
-  <input class="input" type="number" id='guest-estimate' name='guest-estimate' placeholder="Estimated Number of Guests">
+  <input class="input" type="number" id='guest-estimate' name='guest-estimate' required>
 </div>
+
 <div class="control">
 <label class='form-label' for='event-date'>Your Event Date</label>
-  <input class="input" type="text" id='event-date' name='event-date' placeholder="Date Of Event">
+  <input class="input" type="text" id='event-date' name='event-date'>
 </div>
 
 <div class="control is-expanded">

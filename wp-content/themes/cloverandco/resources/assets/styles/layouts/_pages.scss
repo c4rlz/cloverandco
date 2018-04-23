@@ -3,7 +3,6 @@
 /* LANDING PAGE */
 
 .page-landing-data {
-  // height: 100vh;
   .page-container,
   .banner {
     background: rgba($overlay, 0.5);
@@ -39,6 +38,8 @@
   h4 {
     @extend .is-size-3, .is-size-4-mobile;
   }
+
+  padding: 1rem 1.5rem;
 }
 
 /* SERVICES PAGE */
